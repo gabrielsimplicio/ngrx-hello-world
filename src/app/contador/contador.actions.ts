@@ -1,7 +1,7 @@
 import { Action } from '@ngrx/store';
 
-export const INCREMENTAR = 'Incrementar';
-export const DECREMENTAR = 'Decrementar';
+export const INCREMENTAR = 'INCREMENTAR';
+export const DECREMENTAR = 'DECREMENTAR';
 
 export class Incrementar implements Action {
     readonly type = INCREMENTAR;

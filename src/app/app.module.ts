@@ -3,15 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
-import { contadorReducer } from './reducers/contador.reducer';
+
+import { ContadorComponent } from './contador/contador.component';
+import { contador } from './contador/contador.reducer';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContadorComponent
   ],
   imports: [
     BrowserModule,
-    StoreModule.forRoot({ contadorReducer })
+    StoreModule.forRoot({ contador })
   ],
   providers: [],
   bootstrap: [AppComponent]

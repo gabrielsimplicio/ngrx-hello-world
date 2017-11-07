@@ -2,7 +2,7 @@ import * as ContadorActions from './contador.actions';
 
 export type Action = ContadorActions.All;
 
-export function contadorReducer(state: number = 0, action: Action) {
+export function contador(state: number = 0, action: Action) {
 
     switch (action.type) {
         case ContadorActions.INCREMENTAR:
